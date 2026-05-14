@@ -86,7 +86,7 @@ h1 {
     padding-left: 16px;
     padding-right: 16px;
     height: min-content;
-    width: 320px;
+    width: 99%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
@@ -97,7 +97,7 @@ h1 {
     transition: background-color 0.65s ease-in-out, color 0.65s ease-in-out, outline 0.65s ease-in-out;
     margin-top: 0%;
     margin-bottom: 0%;
-    height: 200px;
+    height: 250px;
     width: auto;
     background-color: #6b8968;
     outline: 0.2px solid #c0a779;
