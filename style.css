@@ -1,0 +1,241 @@
+body {
+    background-color: #acc9a2;
+    color: #3e4f3e;
+}
+
+body {
+    transition: background-color 0.65s ease-in-out, color 0.65s ease-in-out, outline 0.65s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 3px solid #c0a779;
+    margin: 0.5%;
+    height: max-content;
+    min-height: 99.5dvh;
+}
+
+label {
+    width: 40px;
+    height: 17px;
+    position: absolute;
+    display: block;
+    background: transparent;
+    outline: 1px solid #3e4f3e;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    right: 8px;
+    top: 8px;
+
+}
+
+label:after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 1px;
+    left: 1.5px;
+    outline: #5b7358;
+    background: #7f9b76;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+input:checked+label:after {
+    left: 38.5px;
+    transform: translateX(-100%);
+    background: #5b7358;
+}
+
+body:has(input:checked + label) {
+    background-color: #283423;
+    color: #6b8368;
+    outline: 2px solid #876D3F;
+}
+
+.sun {
+    padding-left: 3px;
+    z-index: 1000000 !important;
+}
+
+.moon {
+    padding-left: 6px;
+    z-index: 1000000 !important;
+}
+
+h1 {
+    font-family: Garamond, Tahoma, verdana, sans-serif, serif;
+    font-weight: 200;
+    font-size: 1.85rem;
+    text-decoration: solid underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+}
+
+#projects {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: min-content;
+    width: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 16px
+}
+
+.projects {
+    transition: background-color 0.65s ease-in-out, color 0.65s ease-in-out, outline 0.65s ease-in-out;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    height: 200px;
+    width: auto;
+    background-color: #6b8968;
+    outline: 0.2px solid #c0a779;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.website-links {
+    font-size: 0.9rem;
+    transition: color 0.65s ease-in-out;
+    margin-top: 0px;
+    color: #3e4f3e;
+    text-underline-offset: 2px;
+}
+
+.website-links-dark {
+    font-size: 0.9rem;
+    transition: color 0.65s ease-in-out;
+    margin-top: 0px;
+    color: #6b8368;
+    text-underline-offset: 2px;
+}
+
+.website-links:visited {
+    color: #3e4f3e;
+}
+
+.website-links-dark:visited {
+    color: #6b8368;
+}
+
+.website-images-dark {
+    transition: filter 0.65s ease-in-out;
+    height: 75px;
+    margin: 0px;
+    filter: brightness(40%)
+}
+
+.website-images {
+    transition: filter 0.65s ease-in-out;
+    height: 75px;
+    margin: 0px;
+    filter: brightness(85%)
+}
+
+p {
+    margin-left: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+h5 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+h6 {
+    margin-top: 10px;
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+@media screen and (min-width: 786px) {
+    body {
+        margin: 0.2%;
+        margin-bottom: 0px !important;
+        min-width: 98.53vw;
+        height: max-content;
+        min-height: 99.25dvh;
+    }
+
+    #projects {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        padding-left: 4px;
+        padding-right: 4px;
+        height: min-content;
+        width: 95%;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 35px;
+        row-gap: 35px
+    }
+
+    .projects {
+        height: 250px;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .website-images-dark {
+        transition: filter 0.65s ease-in-out;
+        height: 120px;
+        margin: 0px;
+    }
+
+    .website-images {
+        transition: filter 0.65s ease-in-out;
+        height: 120px;
+        margin: 0px;
+    }
+
+    h4,
+    h5 {
+        font-size: 1.35rem;
+        margin-top: 10px;
+        margin-bottom: 10px
+    }
+
+    h6,
+    p {
+        margin-top: 13px;
+        margin-left: 10px;
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+    }
+
+    .website-links {
+        font-size: 1rem;
+        text-underline-offset: 3px;
+    }
+
+    .website-links-dark {
+        font-size: 1rem;
+        text-underline-offset: 3px;
+    }
+}
