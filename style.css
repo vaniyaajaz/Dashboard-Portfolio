@@ -12,7 +12,7 @@ body {
     margin: 0.5%;
     height: max-content;
     min-height: 99.5dvh;
-    min-width: 99.5dvw;
+    width: 100dvw;
 }
 
 label {
@@ -152,7 +152,7 @@ h4 {
 }
 
 p {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 10px;
     font-size: 0.8rem;
     margin-bottom: 4px;
